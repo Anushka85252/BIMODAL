@@ -20,8 +20,8 @@ def preprocess_data(filename_in='../data/chembl_smiles', filename_out='', model_
     """
 
     from preprocessor import Preprocessor
-    p = Preprocessor(filename_in)
     print('Pre-processing of "' + filename_in + '" started.')
+    p = Preprocessor(filename_in)
 
     # user-defined pretreatment
     if invalid:

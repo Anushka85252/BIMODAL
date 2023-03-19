@@ -7,7 +7,7 @@ import torch
 import torch.nn as nn
 from one_out_lstm import OneOutLSTM
 import torch.nn.functional as F
-from scipy.misc import logsumexp
+from scipy.special import logsumexp
 
 torch.manual_seed(1)
 np.random.seed(5)

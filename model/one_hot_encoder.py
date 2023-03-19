@@ -37,6 +37,8 @@ class SMILESEncoder():
             # Skip first line since empty and last line since nan
             data = pd.read_csv(name + '.tar.xz', compression='xz', header=None).values[1:-1]
         else:
+            print('Current Dir:', os.getcwd());
+            print('name: ', name);
             print('CAN NOT READ DATA')
             sys.exit()
 
